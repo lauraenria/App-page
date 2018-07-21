@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <button id="cancel" class="header-button">Cancel</button>
+        <button id="reset" class="header-button">Reset</button>
+    </header>
+    <div class="duration">
+        <button class="duration-button duration-arrive">
+            <span class="button-text">Arrives</span>
+            <span class="button-cta">Select Date</span>
+            <!-- cta call to action -->
+        </button>
+        <button class="duration-button duration-departe">
+            <span class="button-text">Departs</span>
+            <span class="button-cta">-</span>
+        </button>
+    </div>
+    <fieldset class="guest">
+        <legend class="guest-heading">Guests</legend>
+        <div class="guest-options">
+
+            <input name="guest" class="guest-option" type="radio" id="1" checked>
+            <label class="guest-label checked" for="1">1</label>
+
+            <input name="guest" class="guest-option" type="radio" id="2">
+            <label class="guest-label" for="2">2</label>
+
+            <input name="guest" class="guest-option" type="radio" id="3">
+            <label class="guest-label" for="3">3</label>
+
+            <input name="guest" class="guest-option" type="radio" id="4">
+            <label class="guest-label" for="4">4</label>
+        </div>
+    </fieldset>
+    <fieldset class="livingType">
+        <legend class="livingType-heading">Listing Type</legend>
+        <div class="livingType-options">
+
+            <input name="livingType" class="livingType-option" type="radio" id="private-room">
+            <label class="livingType-label" for="private-room">
+                <img class="livingType-icon" src="images\door.svg" alt="private-room">
+                <p class="livingType-text">Private Room</p>
+            </label>
+
+            <input name="livingType" class="livingType-option" type="radio" id="shared-room">
+            <label class="livingType-label" for="shared-room">
+                <img class="livingType-icon" src="images\sofa.svg" alt="Shared Room">
+                <p class="livingType-text">Shared Room</p>
+            </label>
+
+            <input name="livingType" class="livingType-option" type="radio" id="entire-home">
+            <label class="livingType-label" for="entire-home">
+                <img class="livingType-icon" src="images\home.svg" alt="Entire Home">
+                <p class="livingType-text">Entire Home</p>
+            </label>
+        </div>
+        <div class="booking">
+            <p>Instant Book Only</p>
+            <label class="booking-switch">
+                <input class="booking-checkbox" type="checkbox">
+                <div class="booking-slider"></div>
+            </label>
+        </div>
+    </fieldset>
+    <article class="priceRange">
+        <header class="priceRange-header">Price Range</header>
+        <div data-role="main" class="ui-content">
+            <form method="post" action="">
+                <div data-role="rangeslider">
+                    <label for="price-min"></label>
+                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                    <label for="price-max"></label>
+                    <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+                </div>
+            </form>
+            <footer class="saveFilter">
+                <p class="saveFilter-text">Save Filter</p>
+            </footer>
+        </div>
+    </article>
+</body>
+<script src="js/priceRange.js"></script>
+</html>
+
+
+
+
+<!-- id are for js
+class are for style -->

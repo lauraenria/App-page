@@ -1,0 +1,247 @@
+body {
+    font-size: 16px;
+    background-color: #eee;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button {
+    border: 0;
+    background-color: #fff;
+    padding: 20px;
+    color: tomato;
+    font-size: 1.1em;
+}
+
+.duration {
+    display: flex;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px #ddd;
+    position: relative;
+}
+
+.duration::after {
+    content: "";
+    height: 80%;
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    background-color: #eee;
+}
+
+.duration-button {
+    border: 0;
+    background-color: #fff;
+    width: 50%;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.button-text {
+    color: #666;
+    font-size: 1.2em;
+    display: block;
+    line-height: 1.4em;
+}
+
+.button-cta {
+    color: tomato;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.button-cta:nth-child(2) {
+    color: #666;
+}
+
+/* line-height: 1.4em; is important for text */
+
+.guest {
+    margin: 20px;
+}
+
+.guest-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.guest-options {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px #ddd;
+}
+
+.guest-option {
+    display: none;
+}
+
+.guest-label {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+}
+
+.guest-label.checked {
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.livingType {
+    margin: 20px;
+}
+
+.livingType-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.livingType-options {
+    background-color: #fff;
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px #ddd;
+}
+
+.livingType-option {
+    display: none;
+}
+
+.livingType-label {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.livingType-icon {
+    width: 65%;
+    height: 65%;
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+.livingType-label::after {
+    content: "";
+    height: 12%;
+    width: 1px;
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    background-color: #eee;
+}
+
+.livingType-label::before {
+    content: "";
+    height: 12%;
+    width: 1px;
+    position: absolute;
+    left: 66%;
+    top: 50%;
+    background-color: #eee;
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+    /* padding: 30px 15px; */
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 2px 2px #ddd;
+    height: 80px;
+}
+
+.booking::after {
+    content: "";
+    height: 1px;
+    width: 83%;
+    position: absolute;
+    left: 8%;
+    top: 65%;
+    background-color: #eee;
+}
+
+.booking p {
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+}
+
+.booking-switch input {
+    display: none;
+}
+
+.booking-slider {
+    width: 80px;
+    height: 40px;
+    background: #666;
+    position: relative;
+    border-radius: 3px;
+    /* test  */
+    margin: 18px;
+    padding-bottom: 50px;
+}
+
+.booking-slider::before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    background: #fff;
+    left: 2px;
+    top: 7px;
+}
+
+input[type=checkbox]:checked+.booking-slider::before {
+    left: 42px;
+}
+
+.priceRange {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.priceRange-header {
+    margin: 30px;
+}
+
+.saveFilter {
+    margin: 20px 20px;
+    height: 45px;
+    padding-top: 10px;
+    background-color: tomato;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+}
