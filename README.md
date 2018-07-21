@@ -4,4 +4,9 @@
 
 * [Download noUiSlider](https://refreshless.com/nouislider/download/)
 
-![original image](screenshot.png)
+*original*
+![original image](https://github.com/lauraenria/App-page/blob/master/images/app%20page.jpeg?raw=true)
+
+*mine*
+![mine image]()
+
